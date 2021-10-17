@@ -25,7 +25,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h3 align="center">MicroPython LC709203F</h3>
+  <h3 align="center">MicroPython LC709203F Library</h3>
 
   <!-- <p align="center">
     With these sample codes you can receive and send data between a computer and a MicroPython microcontroller via USB connection.
@@ -74,7 +74,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-MicroPython Library for I2C LC709203F battery status and fuel gauge
+MicroPython Library for I2C LC709203F battery status and fuel gauge.
+
 This library was adapted to MicroPython by Christian Reichl based on the CircuitPython library from ladyada (Limor Fried) Adafruit Industries.
 
 ### Tested with the following boards:
@@ -132,7 +133,7 @@ Examples of using this module are in examples folder. There is a separate exampl
 Load the `main.py` script with the library `LC709203F_CR.py` on a microcontroller with MicroPython and execute the `main.py` script.
 Don't forget to connect a battery to one of the JST connectors on the Adafruit LC709203F. If no battery is connected it will cause an I2C error and the program will stop!
 
-If everything worked, then you should get an output like this:
+If everything works correctly, then you should get the following output:
 ![output](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/output.png?raw=true)
 
 #### Please note: 

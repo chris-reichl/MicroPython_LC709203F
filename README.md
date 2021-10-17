@@ -116,10 +116,10 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 ## Connection of the sensor
 ### Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor
-![Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/pictures/Raspberry_Pi_Pico_Adafruit_LC709203F_Thermistor.PNG?raw=true)
+![Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/Raspberry_Pi_Pico_Adafruit_LC709203F_Thermistor.PNG?raw=true)
 
 ### Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor
-![Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/pictures/Pycom_WiPy_Adafruit_LC709203F_Thermistor.PNG?raw=true)
+![Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/Pycom_WiPy_Adafruit_LC709203F_Thermistor.PNG?raw=true)
 
 <!-- Usage Example -->
 ## Usage Example

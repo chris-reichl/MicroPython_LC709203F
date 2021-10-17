@@ -25,7 +25,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h3 align="center">MicroPython LC709203F Library</h3>
+  <h3 align="center">MicroPython Library for I2C LC709203F battery status and fuel gauge</h3>
 
   <!-- <p align="center">
     With these sample codes you can receive and send data between a computer and a MicroPython microcontroller via USB connection.

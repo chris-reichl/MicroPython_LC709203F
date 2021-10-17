@@ -154,7 +154,6 @@ class LC709203F:
             print("cell_temperature read error")
             return None
        
-
     @cell_temperature.setter
     def cell_temperature(self, value):
         """Sets the temperature in the LC709203F"""

@@ -74,8 +74,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-MicroPython Library for I2C LC709203F battery status and fuel gauge.
-
 This library was adapted to MicroPython by Christian Reichl based on the CircuitPython library from ladyada (Limor Fried) Adafruit Industries.
 
 ### Tested with the following boards:

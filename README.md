@@ -130,7 +130,7 @@ Load the `main.py` script with the library `LC709203F_CR.py` on a microcontrolle
 Don't forget to connect a battery to one of the JST connectors on the Adafruit LC709203F. If no battery is connected it will cause an I2C error and the program will stop!
 
 If everything worked, then you should get an output like this:
-![output](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/output.PNG?raw=true)
+![output](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/output.png?raw=true)
 
 Please note: It is normal that it takes a few seconds for the temperature to be displayed correctly. If everything is connected correctly, the sensor will display 25.05 for the first few seconds. If the transistor is not connected, it will output -41.95. The temperature from the sensor is updated about every 10 seconds.
 

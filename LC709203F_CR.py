@@ -145,7 +145,11 @@ class LC709203F:
         """Returns the temperature of the cell"""
         try:
             cell_temperature = self._read_word(LC709203F_CMD_CELLTEMPERATURE) / 10 - 273.15
-            return round(cell_temperature, 3)  
+            if cell_temperature <= 200.0:
+                return round(cell_temperature, 3)  
+            else:
+                print("cell_temperature read error")
+                return None  
         except:
             print("cell_temperature read error")
             return None

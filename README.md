@@ -117,9 +117,13 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 ## Connection of the sensor
 ### Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor
+#### Please note: 
+Don't forget to connect a battery to one of the JST connectors on the Adafruit LC709203F. If no battery is connected it will cause an I2C error and the program will stop!
 ![Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/Raspberry_Pi_Pico_Adafruit_LC709203F_Thermistor.PNG?raw=true)
 
 ### Pycom Board with Adafruit LC709203F and 10kΩ Thermistor
+#### Please note: 
+Don't forget to connect a battery to one of the JST connectors on the Adafruit LC709203F. If no battery is connected it will cause an I2C error and the program will stop!
 ![Pycom Board with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/Pycom_WiPy_Adafruit_LC709203F_Thermistor.PNG?raw=true)
 
 <!-- Usage Example -->
@@ -132,7 +136,8 @@ Don't forget to connect a battery to one of the JST connectors on the Adafruit L
 If everything worked, then you should get an output like this:
 ![output](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/output.png?raw=true)
 
-Please note: It is normal that it takes a few seconds for the temperature to be displayed correctly. If everything is connected correctly, the sensor will display 25.05 for the first few seconds. If the transistor is not connected, it will output -41.95. The temperature from the sensor is updated about every 10 seconds.
+### Please note: 
+It is normal that the temperature is not correct in the first few seconds. If everything is connected correctly, the sensor will output a temperature of 25.05 °C for the first few seconds. If the transistor is not connected, it will output -41.95 °C. The sensor updates the temperature about every 10 seconds.
 
 
 <!-- USAGE EXAMPLES -->

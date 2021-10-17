@@ -25,7 +25,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h3 align="center">MicroPython_LC709203F</h3>
+  <h3 align="center">MicroPython LC709203F</h3>
 
   <!-- <p align="center">
     With these sample codes you can receive and send data between a computer and a MicroPython microcontroller via USB connection.
@@ -75,8 +75,9 @@
 ## About The Project
 
 MicroPython Library for I2C LC709203F battery status and fuel gauge
+This library was adapted to MicroPython by Christian Reichl based on the CircuitPython library from ladyada (Limor Fried) Adafruit Industries.
 
-Tested with the following boards:
+### Tested with the following boards:
 <ul>
   <li>Pycom WiPy 3.0
     <ul>
@@ -118,14 +119,20 @@ This section should list any major frameworks/libraries used to bootstrap your p
 ### Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor
 ![Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/Raspberry_Pi_Pico_Adafruit_LC709203F_Thermistor.PNG?raw=true)
 
-### Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor
-![Raspberry Pi Pico with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/Pycom_WiPy_Adafruit_LC709203F_Thermistor.PNG?raw=true)
+### Pycom Board with Adafruit LC709203F and 10kΩ Thermistor
+![Pycom Board with Adafruit LC709203F and 10kΩ Thermistor](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/Pycom_WiPy_Adafruit_LC709203F_Thermistor.PNG?raw=true)
 
 <!-- Usage Example -->
 ## Usage Example
-Examples of using this module are in examples folder.
+Examples of using this module are in examples folder. There is a separate example for Pycom and Pico, because the commandos of the boards are slightly different.
 
-Load the main.py script with the library LC709203F_CR.py on a microcontroller with MicroPython and execute the main.py script. 
+Load the `main.py` script with the library `LC709203F_CR.py` on a microcontroller with MicroPython and execute the `main.py` script.
+Don't forget to connect a battery to one of the JST connectors on the Adafruit LC709203F. If no battery is connected it will cause an I2C error and the program will stop!
+
+If everything worked, then you should get an output like this:
+![output](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/output.PNG?raw=true)
+
+Please note: It is normal that it takes a few seconds for the temperature to be displayed correctly. If everything is connected correctly, the sensor will display 25.05 for the first few seconds. If the transistor is not connected, it will output -41.95. The temperature from the sensor is updated about every 10 seconds.
 
 
 <!-- USAGE EXAMPLES -->

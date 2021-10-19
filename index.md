@@ -50,5 +50,4 @@ It is normal that the temperature is not correct in the first few seconds. If ev
 
 
 ## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See <a href="https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/LICENSE.txt" target="_blank">`LICENSE.txt`</a> for more information.

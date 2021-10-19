@@ -8,19 +8,19 @@ This library was adapted to MicroPython by Christian Reichl based on the Circuit
   <li>Pycom WiPy 3.0
     <ul>
       <li>Pycom MicroPython 1.20.2.r4 [v1.11-ffb0e1c] on 2021-01-12; WiPy with ESP32</li>
-      <li><a href="https://pycom.io/product/wipy-3-0/" target="_blank"></a></li>
+      <li><a href="https://pycom.io/product/wipy-3-0/" target="_blank">https://pycom.io/product/wipy-3-0/</a></li>
     </ul>
   </li>
   <li>Pycom FiPy
     <ul>
       <li>Pycom MicroPython 1.20.2.r4 [v1.11-ffb0e1c] on 2021-01-12; FiPy with ESP32</li>
-      <li>https://pycom.io/product/fipy/ </li>
+      <li><a href="https://pycom.io/product/fipy/" target="_blank">https://pycom.io/product/fipy/</a></li>
     </ul>
   </li>
   <li>Raspberry Pi Pico
     <ul>
       <li>MicroPython v1.17 on 2021-09-02; Raspberry Pi Pico with RP2040</li>
-      <li>https://www.raspberrypi.com/products/raspberry-pi-pico/</li>
+      <li><a href="https://www.raspberrypi.com/products/raspberry-pi-pico/" target="_blank">https://www.raspberrypi.com/products/raspberry-pi-pico/</a></li>
     </ul>
   </li>
 </ul>

@@ -8,7 +8,7 @@ This library was adapted to MicroPython by Christian Reichl based on the Circuit
   <li>Pycom WiPy 3.0
     <ul>
       <li>Pycom MicroPython 1.20.2.r4 [v1.11-ffb0e1c] on 2021-01-12; WiPy with ESP32</li>
-      <li>https://pycom.io/product/wipy-3-0/ </li>
+      <li><a href="https://pycom.io/product/wipy-3-0/" target="_blank"></a></li>
     </ul>
   </li>
   <li>Pycom FiPy

@@ -1,6 +1,6 @@
 ## MicroPython Library for I2C LC709203F
 
-This library <a href="https://github.com/chris-reichl/MicroPython_LC709203F" target="_blank">library</a> was adapted to MicroPython by Christian Reichl based on the CircuitPython library from ladyada (Limor Fried) Adafruit Industries.
+This <a href="https://github.com/chris-reichl/MicroPython_LC709203F" target="_blank">library</a> was adapted to MicroPython by Christian Reichl based on the CircuitPython library from ladyada (Limor Fried) Adafruit Industries.
 <p>Adafruit LC709203F: <a href="https://www.adafruit.com/product/4712" target="_blank">https://www.adafruit.com/product/4712</a></p>
 
 ### Tested with the following boards:

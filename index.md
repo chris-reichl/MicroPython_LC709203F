@@ -46,7 +46,7 @@ If everything works correctly, then you should get the following output:
 ![output](https://github.com/chris-reichl/MicroPython_LC709203F/blob/main/pictures/output.png?raw=true)
 
 #### Please note: 
-It is normal that the temperature is not correct in the first few seconds. If everything is connected correctly, the sensor will output a temperature of 25.05 °C for the first few seconds. If the transistor is not connected, it will output -41.95 °C. The sensor updates the temperature about every 10 seconds.
+It is normal that the temperature is not correct in the first few seconds. If everything is connected correctly, the sensor will output a temperature of 25.05 °C for the first few seconds. If the 10kΩ Thermistor is not connected, it will output -41.95 °C. The sensor updates the temperature about every 10 seconds.
 
 
 ## License

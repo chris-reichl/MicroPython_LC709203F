@@ -1,23 +1,23 @@
 ## MicroPython Library for I2C LC709203F
 
 This library was adapted to MicroPython by Christian Reichl based on the CircuitPython library from ladyada (Limor Fried) Adafruit Industries.
-
+Adafruit LC709203F: <a href="https://www.adafruit.com/product/4712" target="_blank">https://www.adafruit.com/product/4712</a>
 
 ### Tested with the following boards:
 <ul>
-  <li>Pycom WiPy 3.0
+  <li><b>Pycom WiPy 3.0</b>
     <ul>
       <li>Pycom MicroPython 1.20.2.r4 [v1.11-ffb0e1c] on 2021-01-12; WiPy with ESP32</li>
       <li><a href="https://pycom.io/product/wipy-3-0/" target="_blank">https://pycom.io/product/wipy-3-0/</a></li>
     </ul>
   </li>
-  <li>Pycom FiPy
+  <li><b>Pycom FiPy</b>
     <ul>
       <li>Pycom MicroPython 1.20.2.r4 [v1.11-ffb0e1c] on 2021-01-12; FiPy with ESP32</li>
       <li><a href="https://pycom.io/product/fipy/" target="_blank">https://pycom.io/product/fipy/</a></li>
     </ul>
   </li>
-  <li>Raspberry Pi Pico
+  <li><b>Raspberry Pi Pico</b>
     <ul>
       <li>MicroPython v1.17 on 2021-09-02; Raspberry Pi Pico with RP2040</li>
       <li><a href="https://www.raspberrypi.com/products/raspberry-pi-pico/" target="_blank">https://www.raspberrypi.com/products/raspberry-pi-pico/</a></li>

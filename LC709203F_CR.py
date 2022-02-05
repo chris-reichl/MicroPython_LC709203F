@@ -25,7 +25,7 @@ Implementation Notes
 """
 
 from micropython import const
-import time
+from time import sleep
 
 LC709203F_I2CADDR_DEFAULT = const(0x0B)
 LC709203F_CMD_ICVERSION = const(0x11)
@@ -106,15 +106,15 @@ class LC709203F:
         self.power_mode = PowerMode.OPERATE  # pylint: disable=no-member
         self.pack_size = PackSize.MAH2500  # pylint: disable=no-member
         self.battery_profile = 1
-        time.sleep(1) # increase time.sleep in case of problems with i2c bus!
         self.init_RSOC()
-        time.sleep(2) # increase time.sleep in case of problems with i2c bus!
         print("LC709203F sucessfully inizialized!")
 
 
     def init_RSOC(self):  # pylint: disable=invalid-name
         """ Initialize the state of charge calculator """
+        sleep(0.1) # increase time.sleep in case of problems with i2c bus!
         self._write_word(LC709203F_CMD_INITRSOC, 0xAA55)
+        sleep(0.1) # increase time.sleep in case of problems with i2c bus!
 
     @property
     def cell_voltage(self):
@@ -165,6 +165,54 @@ class LC709203F:
     def ic_version(self):
         """Returns read-only chip version"""
         return self._read_word(LC709203F_CMD_ICVERSION)
+
+    @property
+    def setSleepMode(self):
+        """Returns floating point voltage"""
+        # sleep power_mode = 2
+        global powermode
+        global counter
+        powermode = 0
+        counter = 0
+        tryCounter = 5
+        def setFunction():
+            global powermode
+            global counter
+            try:
+                counter = counter + 1
+                self.power_mode = PowerMode.SLEEP
+                powermode = self.power_mode
+                if powermode == 2: print("LC709203F - sleeping state active")
+            except:
+                return None
+        while powermode is not 2 and counter < tryCounter:
+            setFunction()
+        if counter >= tryCounter: print("Error set sleep")
+
+
+    @property
+    def setOperateMode(self):
+        """Returns floating point voltage"""
+        # operate power_mode = 1
+        global powermode
+        global counter
+        powermode = 0
+        counter = 0
+        tryCounter = 5
+        def setFunction():
+            global powermode
+            global counter
+            try:
+                counter = counter + 1
+                self.power_mode = PowerMode.OPERATE
+                powermode = self.power_mode
+                if powermode == 1: print("LC709203F - operating state active")
+            except:
+                
+                return None
+        while powermode is not 1 and counter < tryCounter:
+            setFunction()
+        if counter >= tryCounter: print("Error set operate")
 
     @property
     def power_mode(self):

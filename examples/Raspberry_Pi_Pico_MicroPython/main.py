@@ -20,3 +20,8 @@ while True:
     temp = sensor.cell_temperature
     print("Battery: " + str(volt) + " Volts / " + str(perc) + " % Cell Temperature: " + str(temp) + " C")
     time.sleep(2) # seconds
+
+# sleep and operate mode:
+# sensor.setSleepMode -> activates the sleep mode to save energy
+# sensor.setOperateMode -> deactivates the sleep mode to perform measurements
+# sensor.power_mode -> returns 1 -> operate or 2 -> sleep
